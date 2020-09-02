@@ -14,8 +14,8 @@ class Box{
       rotate(angle);
       rectMode(CENTER);
       var boxcolor = ["red","green","blue","#FF6600","#E6FB04","#33FF00","#0033FF","#CC00FF","#6E0DD0"];
-      var no = Math.random(0,8);
-      fill("#6E0DD0");
+      var no = color(random(255),random(255),random(255));
+      fill(no);
       rect(0, 0, this.width, this.height);
       pop();
   }
