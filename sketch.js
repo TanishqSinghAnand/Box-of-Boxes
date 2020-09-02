@@ -30,6 +30,8 @@ function draw(){
   background("red");
   val = slider.value();
   world.gravity.y = val;
+  textSize(20)
+  text("Gravity : " + val , window.innerWidth-170, window.innerHeight-112 )
   Engine.update(engine);
   for(var i = 0; i < boxes.length; i++){
     boxes[i].display();
